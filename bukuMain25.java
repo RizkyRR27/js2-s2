@@ -37,5 +37,9 @@ public class bukuMain25 {
         buku25 bk2 = new buku25 ("self Reward", "maheera ayesha",160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        buku25 bukuIki = new buku25("hahahaha", "ikiroza", 1000, 78, 999999);
+        bukuIki.terjual(11);
+        bukuIki.tampilInformasi();
     }
 }

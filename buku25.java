@@ -1,44 +1,33 @@
 import java.util.Scanner;
-
 public class buku25 {
 
-        Scanner haha = new Scanner(System.in);
+    String judul, pengarang;
+    int halaman, stok, harga;
 
-        String judul, pengarang;
-        int halaman,stok,harga;
-
-         void tampilInformasi(){
-            System.out.println("judul :" + judul);
-            System.out.println("pengarang :" + pengarang);
-            System.out.println("jumlah halaman :" + halaman);
-            System.out.println("sisa stok :" + stok);
-            System.out.println("harga :" + harga);
-        }
-        void terjual (int jml){
-          if (stok > 0) {
-            stok -= jml;
-            if (stok < 0) {
-                stok = 0;
-            } else {
-                System.out.println("stok habis ");
-            }
-        }
-        }
-        void restock (int jml){
-              stok += jml;
-        }
-        void gantiHarga (int hrg){
-            harga = hrg;
-        } 
-        public buku25 (String jud, String pg, int hal, int stok, int har) {
-            judul = jud;
-            pengarang= pg;
-            halaman = hal;
-            this.stok = stok;
-            harga = har;
-        }
-    
+    void tampilInformasi() {
+        System.out.println("Judul: " + judul);
+        System.out.println("Pengarang: " + pengarang);
+        System.out.println("Jumlah Halaman: " + halaman);
+        System.out.println("Sisa Stok: " + stok ); 
+        System.out.println("Harga: Rp" + harga); 
     }
-
-
-
+    void terjual(int jml) {
+        if (stok>0) {
+        stok -= jml;
+        }
+    }
+    void restock(int jml) {
+        stok += jml;
+    }
+    void gantiHarga(int hrg) {
+        harga = hrg;
+    }
+  
+    public buku25(String jud, String pg, int hal, int stok, int har) {
+    judul = jud;
+    pengarang = pg;
+    halaman = hal;
+    this.stok = stok;
+    harga=har;
+}
+}
