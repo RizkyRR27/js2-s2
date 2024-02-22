@@ -15,7 +15,14 @@ public class buku25 {
             System.out.println("harga :" + harga);
         }
         void terjual (int jml){
+          if (stok > 0) {
             stok -= jml;
+            if (stok < 0) {
+                stok = 0;
+            } else {
+                System.out.println("stok habis ");
+            }
+        }
         }
         void restock (int jml){
               stok += jml;
@@ -30,6 +37,8 @@ public class buku25 {
             this.stok = stok;
             harga = har;
         }
+    
     }
+
 
 
